@@ -18,11 +18,29 @@ Proyecto realizado en Adobe.
 
 ### Features.
 
+### 1.Organización
+
+
+| [&#x1F527; NPM Scripts](https://docs.npmjs.com/misc/scripts)|Scripts pre-configurados (development, build y tareas limpias)| 
+| -------- | -------- | 
+[:package: Webpack](https://webpack.js.org/)| Automatizador    |
+| :page_facing_up: HTML   | Desarrollo de la página web    | 
+
+
+### 2.JavaScript
+
 | &#x1F300; React| Biblioteca JavaScript| 
 | -------- | -------- |
-| :package: Webpack  | Automatizador    |
-|----------|---------|
-| :card_file_box: Babel| Compilador ES2015|
+|[:card_file_box: Babel](https://babeljs.io/)| Compilador ES2015+|
+|[:globe_with_meridians: Browserlist](https://browserl.ist/) | Compatibilización con distintos navegadores|
+
+### 3. NPM Scripts
+
+| npm run dev | Arranca el servidor local | 
+| -------- | -------- | 
+| npm run watch   | Construlle automaticamente en producción | 
+|npm run deploy | Despliegue opcional de la carpeta de compilación (rama maestra) a la rama gh-pages para páginas GitHub.|
+
 
 
 
