@@ -62,7 +62,7 @@ Proyecto realizado en Adobe.
 
 | npm run dev | Arranca el servidor local | 
 | -------- | -------- | 
-| npm run watch   | Construlle automaticamente en producción | 
+| npm run watch   | Construye automaticamente en producción | 
 |npm run deploy | Despliegue opcional de la carpeta de compilación (rama maestra) a la rama gh-pages para páginas GitHub.|
 
 
