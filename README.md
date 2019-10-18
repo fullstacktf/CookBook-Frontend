@@ -14,6 +14,30 @@ Aplicación intuitiva y de fácil utilización para todo tipo de usuarios, tanto
 
 Proyecto realizado en Adobe.
 
+### Página de inicio
+
+![Página de inicio](src/img/LandingPage.png)
+
+### Página de usuario
+
+![Página de usuario](src/img/TusRecetas.png)
+
+### Recetas
+
+![Recetas](src/img/Recetas.png)
+
+### Buscador
+
+![Buscador](src/img/Buscador.png)
+
+### Sign Up
+
+![Sign Up](src/img/SignUp.png)
+
+### Sign In
+
+![Sign In](src/img/SignIn.png)
+
 ## Desarrollado en JavaScript &#x1F4BB; 
 
 ### Features.
