@@ -18,6 +18,10 @@ Proyecto realizado en Adobe.
 
 ### Features.
 
+| &#x1F300; Webpack | Automatizadot| 
+| -------- | -------- |
+| Text     | Text     |
+
 
 
 
