@@ -18,9 +18,11 @@ Proyecto realizado en Adobe.
 
 ### Features.
 
-| &#x1F300; Webpack | Automatizadot| 
+| &#x1F300; React| Biblioteca JavaScript| 
 | -------- | -------- |
-| Text     | Text     |
+| :package: Webpack  | Automatizador    |
+|----------|---------|
+| :card_file_box: Babel| Compilador ES2015|
 
 
 
