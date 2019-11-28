@@ -5,14 +5,14 @@
       type="text"
       name="username"
       v-model="input.username"
-      placeholder="Username"
+      placeholder="Usuario"
     />
     <br />
     <input
       type="password"
       name="password"
       v-model="input.password"
-      placeholder="Password"
+      placeholder="Contraseña"
     />
     <br />
     <button type="button" v-on:click="login()">Login</button>
