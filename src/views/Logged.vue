@@ -1,15 +1,13 @@
 <template>
-  <div id="secure">
+  <div class="logged">
     <h1>You're Logged</h1>
-    <p>
-      This is a secure area
-    </p>
+    <p>This is a secure area</p>
   </div>
 </template>
 
 <script>
 export default {
-  name: "Secure",
+  name: "Logged",
   data() {
     return {};
   }
@@ -17,7 +15,7 @@ export default {
 </script>
 
 <style scoped>
-#secure {
+.logged {
   background-color: #ffffff;
   border: 1px solid #cccccc;
   padding: 20px;
