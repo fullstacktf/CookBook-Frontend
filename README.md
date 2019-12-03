@@ -1,72 +1,44 @@
-# CookBook-Frontend  &#x1F372;
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## FrontEnd Design &#x1F6A7;
+## Available Scripts
 
-Aplicación intuitiva y de fácil utilización para todo tipo de usuarios, tanto para difundir como buscar recetas de cocina, recomendación de recetas según los alimentos disponibles, gran tipo de variedad para todo tipo de consumidores, desde niños hasta deportistas que necesitan consumir una determinada dieta.
+In the project directory, you can run:
 
-## Equipo :busts_in_silhouette:
+### `npm start`
 
-- [@Carlos A.](https://github.com/bolften)
-- [@Fran N.](https://github.com/frannav)
-- [@Alexa S.](https://github.com/AlexaGSC)
+Runs the app in the development mode.<br />
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-## Diseño
+The page will reload if you make edits.<br />
+You will also see any lint errors in the console.
 
-Proyecto realizado en Adobe.
+### `npm test`
 
-### Página de inicio
+Launches the test runner in the interactive watch mode.<br />
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-![Página de inicio](src/img/LandingPage.png)
+### `npm run build`
 
-### Página de usuario
+Builds the app for production to the `build` folder.<br />
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-![Página de usuario](src/img/TusRecetas.png)
+The build is minified and the filenames include the hashes.<br />
+Your app is ready to be deployed!
 
-### Recetas
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-![Recetas](src/img/Recetas.png)
+### `npm run eject`
 
-### Buscador
+**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-![Buscador](src/img/Buscador.png)
+If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-### Sign Up
+Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
-![Sign Up](src/img/SignUp.png)
+You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-### Sign In
+## Learn More
 
-![Sign In](src/img/SignIn.png)
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-## Desarrollado en JavaScript &#x1F4BB; 
-
-### Features.
-
-### 1.Organización
-
-
-| [&#x1F527; NPM Scripts](https://docs.npmjs.com/misc/scripts)|Scripts pre-configurados (development, build y tareas limpias)| 
-| -------- | -------- | 
-[:package: Webpack](https://webpack.js.org/)| Automatizador    |
-| :page_facing_up: HTML   | Desarrollo de la página web    | 
-
-
-### 2.JavaScript
-
-| &#x1F300; React| Biblioteca JavaScript| 
-| -------- | -------- |
-|[:card_file_box: Babel](https://babeljs.io/)| Compilador ES2015+|
-|[:globe_with_meridians: Browserlist](https://browserl.ist/) | Compatibilización con distintos navegadores|
-
-### 3. NPM Scripts
-
-| npm run dev | Arranca el servidor local | 
-| -------- | -------- | 
-| npm run watch   | Construye automaticamente en producción | 
-|npm run deploy | Despliegue opcional de la carpeta de compilación (rama maestra) a la rama gh-pages para páginas GitHub.|
-
-
-
-
-
-
+To learn React, check out the [React documentation](https://reactjs.org/).
