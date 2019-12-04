@@ -1,0 +1,9 @@
+.header{
+    border: 1px solid red;
+    display: flex;
+    justify-content: flex-end;
+}
+.login,
+.signup {
+    margin-right: 50px;
+}
