@@ -1,6 +1,7 @@
 import React from 'react';
 import SignIn from './SignIn';
 import SignUp from './SignUp';
+import styles from "./Login.module.css";
 
 export interface TrueFalse {
     isLoginOpen: boolean;
@@ -22,16 +23,16 @@ export interface TrueFalse {
     render() {
       return (
         <div>
-          <div className="rootcontainer">
-            <div className="boxcontroller">
-              <div className="controller" onClick={this.showLoginBOX}>
+          <div className={styles.container}>
+            <div className={styles.boxcontroller}>
+              <div className={styles.controller} onClick={this.showLoginBOX}>
                 Login
               </div>
-              <div className="controller" onClick={this.showRegisterBOX}>
+              <div className={styles.controller} onClick={this.showRegisterBOX}>
                 Sign Up{" "}
               </div>
             </div>
-            <div className="boxcontainer">
+            <div className={styles.boxcontroller}>
                 {this.state.isLoginOpen && <SignIn />}
                 {this.state.isRegisterOpen && <SignUp />}
             </div>

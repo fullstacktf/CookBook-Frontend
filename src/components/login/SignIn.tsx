@@ -1,5 +1,5 @@
 import React from "react";
-//import styles from "./Login.module.css";
+import styles from "./Login.module.css";
 class SignIn extends React.Component {
   constructor(props: any) {
     super(props);
@@ -8,13 +8,13 @@ class SignIn extends React.Component {
   submitLogin(e: any) {}
   render() {
     return (
-      <div>
-        <div className="innercontainer">
-          <div className="header">Login</div>
+      <div className={styles.container}>
+        <div className={styles.boxcontroller}>
+          <div className={styles.header}>Login</div>
           <div className="box">
             <div className="inputgroup">
               <label className="label" htmlFor="username">
-                Username
+                Username 
               </label>
               <input
                 type="text"
@@ -25,7 +25,7 @@ class SignIn extends React.Component {
             </div>
             <div className="inputgroup">
               <label className="label" htmlFor="password">
-                Password
+                Password 
               </label>
               <input
                 type="text"

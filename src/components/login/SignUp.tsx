@@ -24,6 +24,17 @@ class SignUp extends React.Component {
                 />
               </div>
               <div className="inputgroup">
+                <label className="label" htmlFor="name">
+                  Name
+                </label>
+                <input
+                  type="text"
+                  name="name"
+                  className="logininput"
+                  placeholder="Name"
+                />
+              </div>
+              <div className="inputgroup">
                 <label className="label" htmlFor="password">
                   Password
                 </label>
@@ -40,7 +51,7 @@ class SignUp extends React.Component {
                 onClick={this.submitLogin.bind(this)}
               >
                 {" "}
-                Login
+                Sign Up
               </button>
             </div>
           </div>
