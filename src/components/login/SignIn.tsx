@@ -11,7 +11,7 @@ class SignIn extends React.Component {
     return (
       <div className={styles.container}>
         <div className={styles.boxcontroller}>
-          <div className={styles.header}>Login</div>
+          <div className={styles.header}>Sign In</div>
           <div className={styles.box}>
             <div className={styles.inputgroup}>
               <label className={styles.label} htmlFor="username">
@@ -41,7 +41,7 @@ class SignIn extends React.Component {
               onClick={this.submitLogin.bind(this)}
             >
               {" "}
-              Login
+              Sign In
             </button>
           </div>
         </div>
@@ -49,4 +49,5 @@ class SignIn extends React.Component {
     );
   }
 }
+
 export default SignIn;
