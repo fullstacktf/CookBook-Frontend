@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "./Login.module.css";
+
 class SignIn extends React.Component {
   constructor(props: any) {
     super(props);
@@ -11,32 +12,32 @@ class SignIn extends React.Component {
       <div className={styles.container}>
         <div className={styles.boxcontroller}>
           <div className={styles.header}>Login</div>
-          <div className="box">
-            <div className="inputgroup">
-              <label className="label" htmlFor="username">
-                Username 
+          <div className={styles.box}>
+            <div className={styles.inputgroup}>
+              <label className={styles.label} htmlFor="username">
+                Username
               </label>
               <input
                 type="text"
                 name="username"
-                className="logininput"
+                className={styles.logininput}
                 placeholder="Username"
               />
             </div>
-            <div className="inputgroup">
-              <label className="label" htmlFor="password">
-                Password 
+            <div className={styles.inputgroup}>
+              <label className={styles.label} htmlFor="password">
+                Password
               </label>
               <input
                 type="text"
                 name="password"
-                className="logininput"
+                className={styles.logininput}
                 placeholder="Password"
               />
             </div>
             <button
               type="button"
-              className="loginbtn"
+              className={styles.loginbtn}
               onClick={this.submitLogin.bind(this)}
             >
               {" "}
