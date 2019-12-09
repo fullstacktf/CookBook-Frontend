@@ -29,10 +29,10 @@ export class Login extends React.Component<{}, TrueFalse> {
               Sign In
             </div>
             <div className={styles.controller} onClick={this.showRegisterBOX}>
-              Sign Up{" "}
+              Sign Up
             </div>
           </div>
-          <div className={styles.boxcontroller}>
+          <div className={styles.boxcontainer}>
             {this.state.isLoginOpen && <SignIn />}
             {this.state.isRegisterOpen && <SignUp />}
           </div>

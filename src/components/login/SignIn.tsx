@@ -9,9 +9,10 @@ class SignIn extends React.Component {
   submitLogin(e: any) {}
   render() {
     return (
-      <div className={styles.container}>
-        <div className={styles.boxcontroller}>
-          <div className={styles.header}>Sign In</div>
+      <div className={styles.innercontainer}>
+        <div className={styles.header}>Sign In</div>
+        <div className={styles.box}>
+          
           <div className={styles.box}>
             <div className={styles.inputgroup}>
               <label className={styles.label} htmlFor="username">
