@@ -1,8 +1,8 @@
 .recipeContainer {
-    height: 400px;
-    width: 250px;
+    height: 350px;
+    width: 200px;
     padding: auto;
-    background: #E98074;
+    background: #907163;
     display: flex;
     justify-content: center;
     border-radius: 21px 21px 21px 21px;
@@ -16,10 +16,10 @@
 }
 
 .userContainer {
-    height: 400px;
-    width: 250px;
+    height: 350px;
+    width: 200px;
     padding: auto;
-    background: #E98074;
+    background: #907163;
     display: flex;
     justify-content: center;
     border-radius: 21px 21px 21px 21px;
