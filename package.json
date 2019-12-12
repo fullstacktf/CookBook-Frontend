@@ -1,0 +1,27 @@
+{
+  "name": "cookbook-frontend",
+  "version": "1.0.0",
+  "description": "\"Front end for chefs4 web application\"",
+  "main": "index.js",
+  "dependencies": {
+    "enzyme": "^3.10.0",
+    "enzyme-adapter-react-16": "^1.15.1",
+    "eslint": "^6.7.2",
+    "eslint-plugin-react": "^7.17.0",
+    "jest": "^24.9.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fullstacktf/CookBook-Frontend.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fullstacktf/CookBook-Frontend/issues"
+  },
+  "homepage": "https://github.com/fullstacktf/CookBook-Frontend#readme"
+}
