@@ -1,33 +1,33 @@
 .recipeContainer {
-    height: 350px;
-    width: 200px;
-    padding: auto;
-    background: #DAAD86;
-    display: flex;
-    justify-content: center;
-    border-radius: 21px 21px 21px 21px;
-    -moz-border-radius: 21px 21px 21px 21px;
-    -webkit-border-radius: 21px 21px 21px 21px;
-    border: 0px solid #000000;
-    font-family: "Rufina", serif;
-    -webkit-box-shadow: 10px 10px 75px -14px rgba(0, 0, 0, 0.75);
-    -moz-box-shadow: 10px 10px 75px -14px rgba(0, 0, 0, 0.75);
-    box-shadow: 10px 10px 75px -14px rgba(0, 0, 0, 0.75);
+  height: 350px;
+  width: 200px;
+  padding: auto;
+  background: #fafad2;
+  display: flex;
+  justify-content: center;
+  border-radius: 21px 21px 21px 21px;
+  -moz-border-radius: 21px 21px 21px 21px;
+  -webkit-border-radius: 21px 21px 21px 21px;
+  border: 0px solid #000000;
+  font-family: "Rufina", serif;
+  -webkit-box-shadow: 10px 10px 75px -14px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 75px -14px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 10px 75px -14px rgba(0, 0, 0, 0.75);
 }
 
 .userContainer {
-    height: 350px;
-    width: 200px;
-    padding: auto;
-    background: #DAAD86;
-    display: flex;
-    justify-content: center;
-    border-radius: 21px 21px 21px 21px;
-    -moz-border-radius: 21px 21px 21px 21px;
-    -webkit-border-radius: 21px 21px 21px 21px;
-    border: 0px solid #000000;
-    font-family: "Rufina", serif;
-    -webkit-box-shadow: 10px 10px 75px -14px rgba(0, 0, 0, 0.75);
-    -moz-box-shadow: 10px 10px 75px -14px rgba(0, 0, 0, 0.75);
-    box-shadow: 10px 10px 75px -14px rgba(0, 0, 0, 0.75);
+  height: 350px;
+  width: 200px;
+  padding: auto;
+  background: #fafad2;
+  display: flex;
+  justify-content: center;
+  border-radius: 21px 21px 21px 21px;
+  -moz-border-radius: 21px 21px 21px 21px;
+  -webkit-border-radius: 21px 21px 21px 21px;
+  border: 0px solid #000000;
+  font-family: "Rufina", serif;
+  -webkit-box-shadow: 10px 10px 75px -14px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 75px -14px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 10px 75px -14px rgba(0, 0, 0, 0.75);
 }
