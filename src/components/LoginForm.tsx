@@ -3,13 +3,20 @@ import React, { FC, useState } from 'react';
 export const LoginForm: FC = () => {
     const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');
+    const [isFormDisabled, setIsFormDisabled] = useState(true);
 
-    const handleOnChange = (event) => {
-        if (event.currentTarget.name === 'username') {
-            setUsername(event.currentTarget.value);
+    const validateForm = () => {
+        const isValid = username.length > 3 && password.length > 3;
+        setIsFormDisabled(!isValid);
+    };
+
+    const handleOnChange = ({ currentTarget: { name, value } }) => {
+        if (name === 'username') {
+            setUsername(value);
         } else {
-            setPassword(event.currentTarget.value);
+            setPassword(value);
         }
+        validateForm();
     };
 
     const doLogin = (event) => {
@@ -30,6 +37,6 @@ export const LoginForm: FC = () => {
     return <form onSubmit={doLogin}>
         <input value={username} name="username" onChange={handleOnChange}/>
         <input value={password} name="password" type="password" onChange={handleOnChange}/>
-        <button type="submit"/>
+        <button disabled={isFormDisabled} type="submit"/>
     </form>
 };
