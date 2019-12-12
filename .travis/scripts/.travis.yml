@@ -1,0 +1,23 @@
+language: node_js
+node_js:
+- stable
+branches:
+  only:
+  - dev
+jobs:
+  include:
+  - stage: test
+    script: npm test
+  - stage: building
+    script:
+    - npm run ts
+    - bash ./travis/scripts/deploy.sh
+    before_install: bash ./travis/scripts/install.sh
+    env:
+    - REMOTE_PATH=project/
+    - REMOTE_USER=travisci
+    - REMOTE_HOST=165.22.77.10
+    - REMOTE_PORT=22
+before_install:
+- openssl aes-256-cbc -K $encrypted_d5a9913d9124_key -iv $encrypted_d5a9913d9124_iv
+  -in deploymentCookBook.enc -out deploymentCookBook -d
