@@ -11,6 +11,10 @@ export const AddRecipeForm: FC<{}> = () => {
     const [title, setTitle] = useState<string>('');
     const [isDescriptionVisible, setIsDescriptionVisible] = useState(false);
 
+    const myToken = localStorage.getItem('myToken');
+
+    localStorage.setItem('myToken', '123');
+
     const handleOnChange = (event) => {
         const newTitle = event.currentTarget.value;
         setTitle(newTitle);
@@ -27,8 +31,21 @@ export const AddRecipeForm: FC<{}> = () => {
         //ingredients: [],
         //tags: []
     };
+
+    const doPost = () => {
+        // const url = 'htt...';
+        // request
+        //     .post(url)
+        //     .send({ title, description })
+        //     .set('Authorization', `Bearer ${myJWTToken}`)
+        //     .set('Accept', 'application/json')
+        //     .then(res => {
+        //         console.log('aa');
+        //     });
+    };
+
     return (<div>
-        <form>
+        <form onSubmit={doPost}>
             Nombre de la receta:
             <input type="text" onChange={handleOnChange} value={title} placeholder="Título de la receta"/>
             {isDescriptionVisible && <div>
