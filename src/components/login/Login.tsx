@@ -1,6 +1,6 @@
 import React from "react";
-import SignIn from "./SignIn";
-import SignUp from "./SignUp";
+import { SignIn } from "./SignIn";
+import { SignUp } from "./SignUp";
 import styles from "./Login.module.css";
 
 export interface TrueFalse {
