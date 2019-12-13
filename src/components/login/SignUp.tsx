@@ -7,20 +7,21 @@ import request from 'superagent';
 export const SignUp: FC = () => {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
-  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
   const [isFormDisabled, setIsFormDisabled] = useState(true);
 
   const validateForm = () => {
-    const isValid = username.length > 3 && name.length > 3 && password.length > 3;
+    const isValid = username.length > 3 && email.length > 3 && password.length > 3;
     setIsFormDisabled(!isValid);
   };
 
   const handleOnChange = ({ currentTarget: { name, value } }) => {
     if (name === 'username') {
+      value = value.toLowerCase();
       setUsername(value);
     }
-    else if(name === 'name') {
-      setName(value);
+    else if(name === 'email') {
+      setEmail(value);
     } else {
       setPassword(value);
     }
@@ -29,11 +30,11 @@ export const SignUp: FC = () => {
 
   const doLogin = (event) => {
     event.preventDefault();
-    console.log('Envio al backend', username, name, password);
+    console.log('Envio al backend', username, email, password);
     const url = 'htt...';
         request
             .post(url)
-            .send({ username, name, password })
+            .send({ username, email, password })
             //.set('Authorization', `Bearer ${myJWTToken}`)
             .set('Accept', 'application/json')
             .then(res => {
@@ -62,14 +63,14 @@ export const SignUp: FC = () => {
                   </div>
                   <div className={styles.inputgroup}>
                     <label className={styles.label} htmlFor="name">
-                      Name
+                      Email
                     </label>
                     <input
-                      value={name}
+                      value={email}
                       type="text"
-                      name="name"
+                      name="email"
                       className={styles.logininput}
-                      placeholder="Name"
+                      placeholder="email"
                       onChange={handleOnChange}
                     />
                   </div>
