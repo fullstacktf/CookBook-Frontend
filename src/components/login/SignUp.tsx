@@ -31,13 +31,14 @@ export const SignUp: FC = () => {
   const doLogin = (event) => {
     event.preventDefault();
     console.log('Envio al backend', username, email, password);
-    const url = 'htt...';
+    const url = '/api/signup';
         request
             .post(url)
             .send({ username, email, password })
             //.set('Authorization', `Bearer ${myJWTToken}`)
             .set('Accept', 'application/json')
             .then(res => {
+                    console.log(res.token);
                     localStorage.setItem('MY_TOKEN', res.token);
             });
         //TODO llamo al backend
