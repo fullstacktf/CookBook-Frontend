@@ -1,4 +1,4 @@
-import React, { FC, useState, useEffect } from 'react';
+import React, { FC, useState/*, useEffect*/ } from 'react';
 
 interface FormValues {
     title: string;
@@ -11,7 +11,7 @@ export const AddRecipeForm: FC<{}> = () => {
     const [title, setTitle] = useState<string>('');
     const [isDescriptionVisible, setIsDescriptionVisible] = useState(false);
 
-    const myToken = localStorage.getItem('myToken');
+    //const myToken = localStorage.getItem('myToken');
 
     localStorage.setItem('myToken', '123');
 
@@ -25,12 +25,12 @@ export const AddRecipeForm: FC<{}> = () => {
         }
     };
 
-    const initialValues: FormValues = {
-        title: '',
-        description: ''
-        //ingredients: [],
-        //tags: []
-    };
+    // const initialValues: FormValues = {
+    //     title: '',
+    //     description: ''
+    //     //ingredients: [],
+    //     //tags: []
+    // };
 
     const doPost = () => {
         // const url = 'htt...';
