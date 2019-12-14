@@ -1,15 +1,24 @@
 import React from 'react';
 import { Header } from '../components/header/Header';
-import RecetasHome from "../components/webContent/WebContent"
+import { RecipeCardV2 } from '../components/recipeCard/RecipeCard';
+import './Home.css';
+//import RecetasHome from "../components/webContent/WebContent"
 //import RecipeCard from '../components/recipeCard/RecipeCard';
 
 class Home extends React.Component<{},{}> {
     render() {
     return (
-      <div className="Home">
+      <div>
         <Header></Header>
-        <RecetasHome></RecetasHome>
+        <div className="Home">
+        <RecipeCardV2/>
+        <RecipeCardV2/>
+        <RecipeCardV2/>
+        <RecipeCardV2/>
+        <RecipeCardV2/>
+        {/* <RecetasHome></RecetasHome> */}
         {/* <RecipeCard/> */}
+      </div>
       </div>
     );  
   }
