@@ -7,14 +7,15 @@ branches:
 jobs:
   include:
   - stage: test
-    script: npm test
+    script: npm run test
+    script: npm run build
   - stage: building
     before_install: bash scripts/install.sh
     env:
-      - REMOTE_PATH=project/
+      - REMOTE_PATH=/var/www/chefs4.me
       - REMOTE_USER=travisci
       - REMOTE_HOST=165.22.77.10
       - REMOTE_PORT=22
     script:
-      - npm install
-    before_install: bash scripts/deploy.sh
+      - npm run build
+    after_success: bash scripts/deploy.sh
