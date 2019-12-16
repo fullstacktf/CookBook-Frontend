@@ -1,16 +1,24 @@
 .header {
-  border: 1px solid red;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  height: 180px;
 }
 .login,
 .signup {
   display: flex;
   justify-items: flex-end;
   margin-right: 20px;
+  margin-top: 20px;
   width: 90px;
   height: 40px;
+  background: rgb(180, 172, 61);
+  border-radius: 10px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb(180, 172, 61);
+  border-image: initial;
+  outline: 0px;
 }
 
 .logo {
@@ -18,4 +26,5 @@
   justify-items: flex-start;
   width: 150px;
   height: 200px;
+  
 }
