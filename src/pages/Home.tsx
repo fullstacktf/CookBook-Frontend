@@ -10,6 +10,7 @@ class Home extends React.Component<{},{}> {
     render() {
     return (
       <div>
+        <Header></Header>
         <LandingPage></LandingPage>
         {/* <Header></Header>
         <div className="Home">
