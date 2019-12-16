@@ -4,7 +4,7 @@ body {
   }
   
   .card {
-    background: #fff;
+    background: rgb(185, 170, 170);
     border-radius: 2px;
     display: inline-block;
     height: 300px;

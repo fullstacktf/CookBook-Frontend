@@ -64,7 +64,7 @@ export const SignIn: FC = () => {
                   </label>
                   <input
                     value={password}
-                    type="text"
+                    type="password"
                     name="password"
                     className={styles.logininput}
                     placeholder="Password"

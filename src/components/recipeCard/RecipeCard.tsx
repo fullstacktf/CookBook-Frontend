@@ -1,7 +1,50 @@
-import React, { FC } from 'react';
+import React, { FC, useState, useEffect } from 'react';
 import './RecipeCard.css';
+import { RecipeCardModel } from '../models/RecipeCardModel';
+import { request } from 'superagent';
 
-export const RecipeCardV2: FC = () => {
+// interface AddRecipeProps {
+//     title: string;
+//     description: string;
+//     owner: string;
+// };
+
+function toRecipeCardModel(cardResponse: any): RecipeCardModel[] {
+    return cardResponse.data.map(rawCard => ({
+        title: rawCard.title,
+        description: rawCard.description
+    }));
+}
+
+//FC<AddRecipeProps>
+export const RecipeCard: FC = (props) => {
+
+    const[isLoading, setIsLoading] = useState(true);
+    const[recipeCard, setRecipeCard] = useState<RecipeCardModel[]>();
+
+    // useEffect(() => {
+    //     const url = '/api/';
+    //     request
+    //             .get(url)
+    //             .set('Accept', 'application/json')
+    //             .then(res => res.json())
+    //             .then(cardResponse => {
+    //                 setRecipeCard(toRecipeCardModel(cardResponse));
+    //                 setIsLoading(false);
+    //             })
+    //             .catch(error => {
+    //                 console.log(error);
+    //             });
+
+    // }, [props.title, props.description, props.owner]);
+
+    // if (isLoading) {
+    // return <div>{props.title} - Loading...</div>;
+    // }
+    
+    // if (!recipeCard) {
+    //     return <div>No users found!</div>;
+    // }
 
     return (<div>
         <div className="card-container">

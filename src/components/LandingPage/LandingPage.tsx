@@ -1,4 +1,5 @@
 import React, { FC } from 'react';
+
 import './LandingPage.css';
 import logo from "../../img/logo.png";
 
