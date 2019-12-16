@@ -20,6 +20,7 @@ export const LandingPage: FC = () => {
   <section className="services">
     <div className="container grid-3 center">
       <div>
+        {/* <div>ALMONDI</div> */}
         <i className="fab fa-youtube fa-3x"></i>
         <h3>Fácil</h3>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, reiciendis!</p>
