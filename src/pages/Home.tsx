@@ -1,6 +1,6 @@
 import React from 'react';
 import { Header } from '../components/header/Header';
-import { RecipeCardV2 } from '../components/recipeCard/RecipeCard';
+//import { RecipeCardV2 } from '../components/recipeCard/RecipeCard';
 import { LandingPage } from '../components/LandingPage/LandingPage';
 import './Home.css';
 //import RecetasHome from "../components/webContent/WebContent"
