@@ -1,64 +1,98 @@
-import React, { FC, useState, useEffect } from 'react';
-import './RecipeCard.css';
-import { RecipeCardModel } from '../models/RecipeCardModel';
-import { request } from 'superagent';
+import React, {
+  FC,
+  useState
+  //useEffect
+} from "react";
+import "./RecipeCard.css";
+// import {
+//   RecipeCardModel,
+//   RecipeCardImageModel
+// } from "../models/RecipeCardModel";
+//import request from "superagent";
 
-// interface AddRecipeProps {
-//     title: string;
-//     description: string;
-//     owner: string;
-// };
-
-function toRecipeCardModel(cardResponse: any): RecipeCardModel[] {
-    return cardResponse.data.map(rawCard => ({
-        title: rawCard.title,
-        description: rawCard.description
-    }));
+interface RecipeModel {
+  title: string;
+  owner: string;
+  description: string;
+  ingredients: Array<object>;
+  images; //: Array<ImageModel>;
+  likes: number;
+  comments; // : Array<object>;
+  date: Date;
+  tags: Array<string>;
 }
 
-//FC<AddRecipeProps>
-export const RecipeCard: FC = (props) => {
+interface RecipeCardProps {
+  recipeList: RecipeModel;
+}
 
-    const[isLoading, setIsLoading] = useState(true);
-    const[recipeCard, setRecipeCard] = useState<RecipeCardModel[]>();
+export const RecipeCard: FC<RecipeCardProps> = ({ recipeList }) => {
+  const [
+    data
+    //, setData
+  ] = useState<RecipeModel>(recipeList);
+  //console.log(data.title);
+  // const [dataImage, setImageData] = useState<RecipeCardImageModel>({
+  //   id: "",
+  //   imgTitle: "",
+  //   imgDate: "",
+  //   imgPath: ""
+  // });
 
-    // useEffect(() => {
-    //     const url = '/api/';
-    //     request
-    //             .get(url)
-    //             .set('Accept', 'application/json')
-    //             .then(res => res.json())
-    //             .then(cardResponse => {
-    //                 setRecipeCard(toRecipeCardModel(cardResponse));
-    //                 setIsLoading(false);
-    //             })
-    //             .catch(error => {
-    //                 console.log(error);
-    //             });
+  // const [recipe, setRecipe] = useState<RecipeCardProps>({
+  //   recipeList: []
+  // });
 
-    // }, [props.title, props.description, props.owner]);
+  // // async function requestRecipe(props, setData: React.Dispatch<any>) {
+  // //   const myJWTToken =
+  // //     "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJwZXBlIiwiaWF0IjoxNTc2NjEwNzAzLCJleHAiOjE1Nzc4MjAzMDN9.MddOp-S-DTwcyvUlnowttyASKlOTSu_dlpwAigzOhDU";
+  // //   const domain = "https://chefs4.me";
+  // //   const url = `${domain}/api/recipes/${props.recipeId}`;
+  // //   console.log("TEST", props.recipeId);
+  // //   await request
+  // //     .get(url)
+  // //     .set("Authorization", `Bearer ${myJWTToken}`)
+  // //     .set("Accept", "application/json")
+  // //     .then(res => {
+  // //       setData(res.body);
+  // //     });
+  // // }
 
-    // if (isLoading) {
-    // return <div>{props.title} - Loading...</div>;
-    // }
-    
-    // if (!recipeCard) {
-    //     return <div>No users found!</div>;
-    // }
+  // async function requestImageRecipe(props, setImageData: React.Dispatch<any>) {
+  //   const myJWTToken =
+  //     "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJwZXBlIiwiaWF0IjoxNTc2NjEwNzAzLCJleHAiOjE1Nzc4MjAzMDN9.MddOp-S-DTwcyvUlnowttyASKlOTSu_dlpwAigzOhDU";
+  //   const domain = "https://chefs4.me";
+  //   const url = `${domain}/api/recipes/${props.recipeId}/images`;
+  //   await request
+  //     .get(url)
+  //     .set("Authorization", `Bearer ${myJWTToken}`)
+  //     .set("Accept", "application/json")
+  //     .then(res => {
+  //       setImageData(res.body);
+  //     });
+  // }
 
-    return (<div>
-        <div className="card-container">
-        <div className="card u-clearfix">
-        <div className="card-body">
-        <span className="card-author subtle">John Smith</span>
-        <h2 className="card-title">New Brunch Recipe</h2>
-        <span className="card-description subtle">These last few weeks I have been working hard on a new brunch recipe for you all.</span>
+  // useEffect(() => {
+  //   //requestRecipe(props, setData);
+  //   requestImageRecipe(props, setImageData);
+  // }, []);
+
+  // // console.log(dataImage);
+
+  return (
+    <div className="card-container">
+      <div className="card-body">
+        <span className="card-author subtle">{data.owner}</span>
+        <h2 className="card-title">{data.title}</h2>
+        <span className="card-description subtle">{data.description}</span>
         <div className="card-read">Read</div>
         <span className="card-tag card-circle subtle">C</span>
-        </div>
-        <img src="https://s15.postimg.cc/temvv7u4r/recipe.jpg" alt="" className="card-media" />
-        </div>
-        <div className="card-shadow"></div>
-        </div>
-    </div>);
-}
+      </div>
+      <img
+        src={"https://chefs4.me/assets/" + data.images[0].imgTitle}
+        alt="{data.description}"
+        className="card-media"
+      />
+    </div>
+  );
+};

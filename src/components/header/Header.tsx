@@ -8,7 +8,7 @@ export const Header: FC = () => {
   return (
     <header className={styles.header}>
         <div className={styles.logo}>
-          <img src={logo} alt="Logo" />
+          <img  src={logo} alt="Logo" />
         </div>
         <Link to="/addrecipe">
           <button className={styles.login}>Añadir Receta</button>
