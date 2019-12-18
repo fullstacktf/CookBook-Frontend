@@ -1,13 +1,21 @@
+<<<<<<< HEAD
 import React from 'react';
 import { Header } from '../components/header/Header';
 //import { RecipeCard } from '../components/recipeCard/RecipeCard';
 import { LandingPage } from '../components/LandingPage/LandingPage';
 import './Home.css';
+=======
+import React from "react";
+import { Header } from "../components/header/Header";
+//import { RecipeCard } from '../components/recipeCard/RecipeCard';
+import { LandingPage } from "../components/LandingPage/LandingPage";
+import "./Home.css";
+>>>>>>> cea6a11d0161180f26730baa29f0eb08a7151147
 //import RecetasHome from "../components/webContent/WebContent"
 //import RecipeCard from '../components/recipeCard/RecipeCard';
 
-class Home extends React.Component<{},{}> {
-    render() {
+class Home extends React.Component<{}, {}> {
+  render() {
     return (
       <div>
         <Header></Header>
@@ -21,10 +29,10 @@ class Home extends React.Component<{},{}> {
         <RecipeCard/> */}
         {/* <RecetasHome></RecetasHome> */}
         {/* <RecipeCard/> */}
-        </div>
+      </div>
       // </div>
-    );  
+    );
   }
-  }
-  
-  export default Home;
+}
+
+export default Home;
