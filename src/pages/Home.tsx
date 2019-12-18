@@ -1,6 +1,6 @@
 import React from 'react';
 import { Header } from '../components/header/Header';
-//import { RecipeCardV2 } from '../components/recipeCard/RecipeCard';
+//import { RecipeCard } from '../components/recipeCard/RecipeCard';
 import { LandingPage } from '../components/LandingPage/LandingPage';
 import './Home.css';
 //import RecetasHome from "../components/webContent/WebContent"
@@ -14,11 +14,11 @@ class Home extends React.Component<{},{}> {
         <LandingPage></LandingPage>
         {/* <Header></Header>
         <div className="Home">
-        <RecipeCardV2/>
-        <RecipeCardV2/>
-        <RecipeCardV2/>
-        <RecipeCardV2/>
-        <RecipeCardV2/> */}
+        <RecipeCard/>
+        <RecipeCard/>
+        <RecipeCard/>
+        <RecipeCard/>
+        <RecipeCard/> */}
         {/* <RecetasHome></RecetasHome> */}
         {/* <RecipeCard/> */}
         </div>

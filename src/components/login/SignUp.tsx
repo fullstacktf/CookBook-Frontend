@@ -1,6 +1,7 @@
 import React, { FC, useState } from 'react';
 import styles from "./Login.module.css";
 import request from 'superagent';
+import { Link } from 'react-router-dom';
 
 
 
@@ -81,13 +82,14 @@ export const SignUp: FC = () => {
                     </label>
                     <input
                       value={password}
-                      type="text"
+                      type="password"
                       name="password"
                       className={styles.logininput}
                       placeholder="Password"
                       onChange={handleOnChange}
                     />
                   </div>
+                  <Link to="/userhome">
                   <button
                     type="submit"
                     className={styles.loginbtn}
@@ -96,6 +98,7 @@ export const SignUp: FC = () => {
                     {" "}
                     Sign Up
                   </button>
+                  </Link>
                 </div>
               </div>
             </div>
